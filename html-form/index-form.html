@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Learning the Forms</title>
+    </head>
+    <body>
+        <h1>Hello, Forms!</h1>
+        <form action="/form-handling-url" method="post"> <!--action tells the browser the url to submit the form, method is type of request POST or GET-->
+            <fieldset> <!--Helps to group togethet the form Elements-->
+                <legend>Add user</legend> <!--Adds a title to the top of the field-->
+
+                <div>
+                    <label for="firstName">First Name</label> <!--it creates a label and for attribute targets the id attribute of the input box-->
+                    <input type="text" id="firstName" name="first_name"><!--creates an input box to enter data-->
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address"><!-- different types have different functions ex, email, date etc.-->
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="user_role_name"> <!--The <select> element in HTML is used to create a drop-down list (also known as a select box) in a form. It allows users to choose one or more options from a predefined list.-->
+                        <option value="student">Student</option> <!--Option element sets the values for dropdown list-->
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language</p>
+                    <label for="html">HTML</label>
+                    <input type="radio" id="html" name="html">
+                    <label for="css">CSS</label>
+                    <input type="radio" id="css" name="css">
+                    <label for="html">JavaScript</label>
+                    <input type="radio" id="javascript" name="javascript">
+                </div>
+                <div>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"></textarea> <!--Text-area is used for multi-line input-->
+                </div>
+                <div>
+                    <label for="currentdate">Expiration</label>
+                    <input type="date" id="currentdate" name="currentdate">
+                </div>
+
+                <div>
+                    <label for="newsletter">Sign up for newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+
+                </div>
+
+                <div>
+                    <label for="terms">Sign up for newsletter</label>
+                    <input type="checkbox" id="terms" name="terms">
+
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button> <!-- Button creates a button-->
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
