@@ -1,0 +1,36 @@
+.wgs {
+  height: 241px;
+  position: relative;
+  width: 320px;
+  display: inline-block;
+  /* overflow: auto; */
+}
+
+.wgs__mole-head {
+  height: 178px;
+  position: absolute;
+  width: 188px;
+  left: 55px;
+  right: 78px;
+  top: 0px;           /* base mole position */
+  margin: top;             /* visible mole */              /* mole behind the dirt */
+}
+
+.wgs__dirt-pile {
+  height: 110px;
+  position: absolute;
+  width: 320px;
+  bottom: 0px;             /* dirt always stays on top */
+}
+
+/* Hidden version of the mole: move it down until its top touches dirt */
+.wgs__mole-head--hidden {
+  position: absolute;
+  top: 241px;         /* mole head top aligned with bottom edge of dirt pile */
+  left: 55px;
+  width: 188px;
+  height: 178px;
+  margin-top: 0;
+  right: 78px;
+        /* margin-top not needed here */
+}
